@@ -20,8 +20,12 @@ const Project = props => (
         display: flex;
         justify-content: center;
         width: 100%;
+        margin: 40px 0;
       }
       .project {
+        position: relative;
+        top: 0;
+        transition: all .2s ease;
         border: 1px solid #ddd;
         border-radius: 4px;
         padding: 16px 25px;
@@ -31,9 +35,14 @@ const Project = props => (
         overflow-x: hidden;
         display: inline-flex;
         align-items: center;
-        margin: 30px 0;
-        filter: drop-shadow(0 4px 4px rgba(0,0,0,0.07));
+        filter: drop-shadow(0 4px 4px rgba(0,0,0,0.1));
         background: #fff;
+      }
+
+      .wrapper:hover .project {
+        top: -5px;
+        filter: drop-shadow(0 7px 7px rgba(0,0,0,0.07));
+
       }
 
       .project h3 {
@@ -75,7 +84,7 @@ const Index = () => (
       src="https://images.pexels.com/photos/803250/pexels-photo-803250.jpeg"/>
 
     <div id="projects">
-      <h2>Projects</h2>
+      <h2>Projects / Sub-domains</h2>
 
       <Project
         title="BasicCanvas"
