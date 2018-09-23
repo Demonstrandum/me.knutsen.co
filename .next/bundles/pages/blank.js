@@ -1,0 +1,1 @@
+module.exports=__NEXT_REGISTER_PAGE("/blank",function(){return{page:webpackJsonp([4],{205:function(e,t,n){e.exports=n(206)},206:function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var u=n(1),a=n.n(u),l=n(72);t.default=function(){return a.a.createElement(l.a,null,a.a.createElement("p",null,"About page..."))}}},[205]).default}});

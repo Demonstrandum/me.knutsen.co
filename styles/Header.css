@@ -1,0 +1,47 @@
+header {
+  text-align: center;
+  background: #fff;
+  filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.1));
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  max-height: 50px;
+}
+
+header > div {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  display: inline-flex;
+  height: 100%;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+header .aside {
+  display: inline-block;
+  float: left;
+}
+
+header a {
+  font-weight: normal;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #999;
+  padding: 15px;
+  display: inline-block;
+  border-color: transparent;
+}
+
+header #home {
+  font-family: 'Playfair Display SC';
+  padding: 0 15px 0 0;
+  font-size: 33px;
+  color: #000;
+}
+
+header a:hover {
+  color: #000;
+}
