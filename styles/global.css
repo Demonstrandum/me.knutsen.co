@@ -11,13 +11,13 @@ html {
 }
 
 body {
-  margin: 0 20vw;
+  margin: 0 auto;
   padding: 2em 0;
   font-family: -apple-system, BlinkMacSystemFont, "Cantarell", "Helvetica Neue", sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   font-size: 16px;
-  width: 60vw;
+  width: 40em;
   min-height: 100%;
   position: relative;
   top: 0;
@@ -51,7 +51,7 @@ blockquote {
 }
 
 header > div {
-  width: 60vw;
+  width: 40em;
 }
 
 h1, h2, h3, h4, h5, h6 {
