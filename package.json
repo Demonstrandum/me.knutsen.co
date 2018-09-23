@@ -3,10 +3,6 @@
   "version": "1.0.0",
   "description": "knutsen.co source.",
   "main": "pages/index.js",
-  "now": {
-    "name": "knutsen",
-    "alias": "knutsen.co"
-  },
   "scripts": {
     "dev": "next",
     "build": "next build",
