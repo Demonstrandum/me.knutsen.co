@@ -7,6 +7,7 @@ header {
   top: 0;
   left: 0;
   max-height: 50px;
+  z-index: 9;
 }
 
 header > div {
@@ -21,18 +22,39 @@ header > div {
 }
 
 header .aside {
-  display: inline-block;
   float: left;
+}
+
+header .right {
+  position: absolute;
+  right: 0;
 }
 
 header a {
   font-weight: normal;
   font-size: 12px;
-  text-transform: uppercase;
-  color: #999;
   padding: 15px;
   display: inline-block;
   border-color: transparent;
+}
+
+header .aside a {
+  text-transform: uppercase;
+  color: #999;
+}
+
+header .right a {
+  text-decoration: none;
+  border: none;
+  height: 15px;
+}
+
+header img {
+  opacity: 0.4;
+}
+
+header img:hover {
+  opacity: 1;
 }
 
 header #home {
