@@ -71,6 +71,8 @@ const Index = () => (
   <Layout>
     <Title>Home</Title>
     <h1><span>Knutsen</span></h1>
+    <img id="hordaland"
+      src="https://images.pexels.com/photos/803250/pexels-photo-803250.jpeg"/>
 
     <div id="projects">
       <h2>Projects</h2>
@@ -105,8 +107,22 @@ const Index = () => (
       </Project>
     </div>
     <style jsx>{`
+      h3 {
+        z-index: 1;
+      }
+      #hordaland {
+        position: absolute;
+        object-fit: cover;
+        width: 110%;
+        height: 345px;
+        right: -15%;
+        top: 35vh;
+        z-index: -1;
+        border-radius: 3px;
+        filter: drop-shadow(0 4px 4px #00000077);
+      }
       #projects {
-        position: relative;
+        position: absolute;
         top: 100vh;
         min-height: 100vh;
         padding: 50px 0 0 0;

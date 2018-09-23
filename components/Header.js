@@ -18,7 +18,13 @@ export default () => (
           <a>Emails</a>
         </Link>
       </div>
-      <div className="right"/>
+      <div className="right">
+        <a href="https://github.com/Demonstrandum/knutsen.co">
+          <img
+            height="20"
+            src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/github.svg"/>
+        </a>
+      </div>
     </div>
   </header>
 );
