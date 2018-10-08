@@ -47,6 +47,7 @@ header .right a {
   text-decoration: none;
   border: none;
   height: 15px;
+  padding: 15px !important;
 }
 
 header img {

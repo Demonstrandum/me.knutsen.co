@@ -1,13 +1,21 @@
 import '../components/Utility';
 import Layout from '../components/Layout';
+import GitLink from '../components/GitLink';
 import '../styles/global.css';
+
+const RenderGit = props => {
+  if (props.href)
+    return <GitLink href={`https://github.com/Demonstrandum/${props.href}`} />
+  else
+    return <span />
+};
 
 const Project = props => (
   <div className="wrapper">
     <div className="project">
       <div>
         <div>
-          <h3>{props.title}</h3>
+          <h3>{props.title} <RenderGit href={props.github} /> </h3>
           {props.children}
         </div>
       </div>
@@ -88,6 +96,7 @@ const Index = () => (
 
       <Project
         title="BasicCanvas"
+        github="BasicCanvas"
         thumb={
           <iframe
             scrolling="no"
@@ -102,6 +111,7 @@ const Index = () => (
 
       <Project
         title="FAMalam"
+        github="FAMalam"
         thumb={
           <code>
             <pre>{fam_code}</pre>
