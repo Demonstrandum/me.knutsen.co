@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import '../styles/Header.css';
+import GitLink from './GitLink'
 
 export default () => (
   <header>
@@ -19,11 +20,7 @@ export default () => (
         </Link>
       </div>
       <div className="right">
-        <a href="https://github.com/Demonstrandum/knutsen.co">
-          <img
-            height="20"
-            src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/github.svg"/>
-        </a>
+        <GitLink href="https://github.com/Demonstrandum/knutsen.co" />
       </div>
     </div>
   </header>
