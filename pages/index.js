@@ -101,12 +101,23 @@ const Index = () => (
           <iframe
             scrolling="no"
             src="https://canvas.knutsen.co/example/?vector_field.js"/>
-        }
-      >
+        }>
         Simple JavaScript Canvas library for 2D graphics.
         <p/>
         See <a href="https://canvas.knutsen.co/">canvas.knutsen.co</a> for
         examples.
+      </Project>
+
+      <Project
+        title="Veto"
+        github="Veto"
+        thumb={
+          <img src="https://veto.vote/square.png" />
+        }>
+        Straw poll style website, with support
+        for extra/alternative votes if enabled.
+		<p/>
+        Go to the website, <a href="https://veto.vote/">veto.vote</a>.
       </Project>
 
       <Project
@@ -116,8 +127,7 @@ const Index = () => (
           <code>
             <pre>{fam_code}</pre>
           </code>
-        }
-      >
+        }>
         Web interface for FAM, FAMalam. Interpreter for
         assembly-like langauge.
         <p/>
@@ -157,8 +167,9 @@ const Index = () => (
         width: 100%;
         overflow: hidden;
       }
-      #projects code {
+      #projects code, #projects img {
         display: block;
+        object-fit: contain;
         border: 1px solid #ddd;
         border-radius: 4px;
         padding 5px 10px;
