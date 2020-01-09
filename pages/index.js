@@ -50,7 +50,6 @@ const Project = props => (
       .wrapper:hover .project {
         top: -5px;
         filter: drop-shadow(0 7px 7px rgba(0,0,0,0.07));
-
       }
 
       .project h3 {
@@ -84,6 +83,9 @@ MORE &ACC : 29
 
 END: HALT 0
 `;
+
+const accent = () => `hsl(${Math.random()*360}deg, 55%, 80%)`;
+
 const Index = () => (
   <Layout>
     <Title>Home</Title>
@@ -93,7 +95,13 @@ const Index = () => (
 
     <div id="projects">
       <h2>Projects / Sub-domains</h2>
-
+      <p>
+          Fun projects for the web.  For other projects unrealted to the
+          web (which is most of them) see my&nbsp;
+        <a target="_blank" href="https://github.com/Demonstrandum">
+          GitHub
+        </a>.
+      </p>
       <Project
         title="BasicCanvas"
         github="BasicCanvas"
@@ -103,11 +111,12 @@ const Index = () => (
             src="https://canvas.knutsen.co/example/?vector_field.js"/>
         }>
         Simple JavaScript Canvas library for 2D graphics.
-        <p/>
-        See <a href="https://canvas.knutsen.co/">canvas.knutsen.co</a> for
+        <p />
+        See <a target="_blank" href="https://canvas.knutsen.co/">canvas.knutsen.co</a> for
         examples.
       </Project>
 
+      {/*
       <Project
         title="Veto"
         github="Veto"
@@ -116,9 +125,10 @@ const Index = () => (
         }>
         Straw poll style website, with support
         for extra/alternative votes if enabled.
-		<p/>
-        Go to the website, <a href="https://veto.vote/">veto.vote</a>.
+        <p />
+        Go to the website, <a target="_blank" href="https://veto.vote/">veto.vote</a>.
       </Project>
+      */}
 
       <Project
         title="FAMalam"
@@ -131,23 +141,24 @@ const Index = () => (
         Web interface for FAM, FAMalam. Interpreter for
         assembly-like langauge.
         <p/>
-        See <a href="https://fam.knutsen.co/">fam.knutsen.co</a> to try
+        See <a target="_blank" href="https://fam.knutsen.co/">fam.knutsen.co</a> to try
         it out.
       </Project>
     </div>
     <style jsx>{`
+
       h3 {
         z-index: 1;
       }
       #hordaland {
         position: absolute;
         object-fit: cover;
-        width: 110%;
+        width: 100%;
         height: 345px;
-        right: -15%;
+        right: 0;
         top: 35vh;
         z-index: -1;
-        border-radius: 3px;
+        border-radius: 4px;
         filter: drop-shadow(0 4px 4px #00000077);
       }
       #projects {
@@ -177,10 +188,15 @@ const Index = () => (
         width: 95%;
         overflow: hidden;
       }
+
       #projects pre {
         padding: 0;
         margin: 0;
         width: 90%;
+      }
+
+      h1 span {
+        background: ${accent()};
       }
 
     `}
