@@ -1,7 +1,13 @@
 import '../components/Utility';
-import Layout from '../components/Layout';
 import GitLink from '../components/GitLink';
 import '../styles/global.css';
+import dynamic from "next/dynamic";
+
+const NoSSRLayout = dynamic(
+    () => import('../components/Layout'), {
+    ssr: false
+  }
+);
 
 const RenderGit = props => {
   if (props.href)
@@ -100,7 +106,7 @@ const image = () => {
 };
 
 const Index = () => (
-  <Layout>
+  <NoSSRLayout>
     <Title>Home</Title>
     <h1><span>Knutsen</span></h1>
     <img id="hordaland" src={image()} />
@@ -213,7 +219,7 @@ const Index = () => (
 
     `}
     </style>
-  </Layout>
+  </NoSSRLayout>
 );
 
 export default Index;
