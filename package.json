@@ -2,6 +2,7 @@
   "name": "knutsen.co",
   "version": "1.0.0",
   "description": "knutsen.co source.",
+  "engines": { "node": "12.14.1" },
   "main": "pages/index.js",
   "scripts": {
     "dev": "next",

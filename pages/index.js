@@ -86,12 +86,24 @@ END: HALT 0
 
 const accent = () => `hsl(${Math.random()*360}deg, 55%, 80%)`;
 
+const images = [
+    'https://images.pexels.com/photos/1938355/pexels-photo-1938355.jpeg',
+    'https://images.pexels.com/photos/803250/pexels-photo-803250.jpeg',
+    'https://images.pexels.com/photos/2926524/pexels-photo-2926524.jpeg',
+    'https://images.pexels.com/photos/1647962/pexels-photo-1647962.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260',
+    'https://images.pexels.com/photos/145712/pexels-photo-145712.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+    'https://images.pexels.com/photos/1482937/pexels-photo-1482937.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+];
+
+const image = () => {
+    return images[Math.round(Math.random() * (images.length - 1))];
+};
+
 const Index = () => (
   <Layout>
     <Title>Home</Title>
     <h1><span>Knutsen</span></h1>
-    <img id="hordaland"
-      src="https://images.pexels.com/photos/803250/pexels-photo-803250.jpeg"/>
+    <img id="hordaland" src={image()} />
 
     <div id="projects">
       <h2>Projects / Sub-domains</h2>
@@ -159,7 +171,7 @@ const Index = () => (
         top: 35vh;
         z-index: -1;
         border-radius: 4px;
-        filter: drop-shadow(0 4px 4px #00000077);
+        filter: drop-shadow(0 4px 4px #00000050);
       }
       #projects {
         position: absolute;
