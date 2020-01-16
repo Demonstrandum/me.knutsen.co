@@ -1,7 +1,8 @@
 header {
   text-align: center;
-  background: #fffc;
+  background: var(--bg-trans);
   box-shadow: 0 0 6px #00000021;
+  border-bottom: 1px solid var(--border);
   backdrop-filter: saturate(180%) blur(20px);
   position: fixed;
   width: 100%;
@@ -63,7 +64,7 @@ header #home {
   font-family: 'Playfair Display SC';
   padding: 0 15px 0 0;
   font-size: 33px;
-  color: #000;
+  color: var(--fg);
 }
 
 header a:hover {

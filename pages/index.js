@@ -40,8 +40,8 @@ const Project = props => (
         position: relative;
         top: 0;
         transition: all .2s ease;
-        border: 1px solid #ddd;
-        border-radius: 4px;
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
         padding: 16px 25px;
         height: 100%;
         width: 100%;
@@ -49,8 +49,8 @@ const Project = props => (
         overflow-x: hidden;
         display: inline-flex;
         align-items: center;
-        filter: drop-shadow(0 4px 4px rgba(0,0,0,0.1));
-        background: #fff;
+        filter: var(--shadow);
+        background: var(--bg);
       }
 
       .wrapper:hover .project {
@@ -89,8 +89,6 @@ MORE &ACC : 29
 
 END: HALT 0
 `;
-
-const accent = () => `hsl(${Math.random()*360}deg, 55%, 80%)`;
 
 const images = [
     'https://images.pexels.com/photos/1938355/pexels-photo-1938355.jpeg',
@@ -176,8 +174,7 @@ const Index = () => (
         right: 0;
         top: 35vh;
         z-index: -1;
-        border-radius: 4px;
-        filter: drop-shadow(0 4px 4px #00000050);
+        filter: var(--shadow)
       }
       #projects {
         position: absolute;
@@ -212,11 +209,6 @@ const Index = () => (
         margin: 0;
         width: 90%;
       }
-
-      h1 span {
-        background: ${accent()};
-      }
-
     `}
     </style>
   </NoSSRLayout>
