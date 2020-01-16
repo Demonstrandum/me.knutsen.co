@@ -1,0 +1,28 @@
+:root {
+    --bg: #000;
+    --bg-trans: #000c;
+    --fg: #fff;
+    --fg-trans: #fffc;
+    --border: #333;
+}
+
+a {
+    color: #bbb;
+}
+
+header a:hover {
+    color: #fff;
+}
+
+.GitLink img {
+  filter: invert(1);
+  opacity: 0.5;
+}
+
+#dark-toggle {
+      filter: invert(1) drop-shadow(0 0 4px #fff9);
+}
+
+#dark-toggle img {
+    filter: invert(1);
+}

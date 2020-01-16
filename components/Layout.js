@@ -2,6 +2,7 @@ import './Utility';
 import Link from 'next/link';
 import Head from 'next/head';
 import Header from './Header';
+import DarkToggle from './DarkToggle';
 
 export default class Layout extends Component {
   constructor(props) {
@@ -27,6 +28,7 @@ export default class Layout extends Component {
           <title>Unnamed</title>
         </Head>
         <Header/>
+        <DarkToggle/>
         {this.props.children}
       </div>
     );
