@@ -4,6 +4,7 @@
 
 :root {
   --bg: #fff;
+  --accent: #fafafa;
   --bg-trans: #fffc;
   --fg: #000;
   --fg-trans: #000c;
@@ -27,7 +28,7 @@ html {
 }
 
 body {
-  background: var(--bg);
+  background: var(--accent);
   color: var(--fg);
   margin: 0 auto;
   padding: 2em 0;
