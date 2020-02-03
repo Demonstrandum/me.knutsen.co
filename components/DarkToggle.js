@@ -39,7 +39,8 @@ export default class Layout extends Component {
             }
         }
 
-        if (mode === 'dark') toggle();
+        if (mode === 'dark' && d.getElementById('dark-css') === null)
+            toggle();
 
         d.getElementById('dark-toggle').addEventListener('click', toggle);
     }
