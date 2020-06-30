@@ -1,6 +1,6 @@
 {
-    "name": "knutsen",
-    "alias": "knutsen.co",
+    "name": "me.knutsen",
+    "alias": "me.knutsen.co",
 	"version": 2,
 	"builds": [
 		{ "src" : "next.config.js", "use": "@now/next" }
